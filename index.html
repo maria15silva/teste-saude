@@ -1,0 +1,955 @@
+     <!-- MARCAÇÃO HTML -->
+<div style="width: 100%;">
+
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <div class="pesquisa">
+        <div class="ferramentas">
+           
+        </div>
+     
+        <input type="text" id="Buscapesquisa" placeholder="Buscar unidades">
+
+    </div>
+
+      <!-- Botões de categorias -->
+      <div class="categoria-botoes">
+        <button class="button_cat" data-categoria="ubs">UBS</button>
+        <button class="button_cat" data-categoria="usf">USF</button>
+        <button class="button_cat" data-categoria="pas">PAS</button>
+        <button class="button_cat" data-categoria="outras">Outras Unidades</button>
+    </div> 
+
+ 
+    <div id="containerTransp"> 
+        <div class="categoriaTransp" data-categoria="ubs">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">Unidade Básica de Saúde Genefredo Monteiro</h3>
+            <p class="unidade-info">Rua General Carneiro, 211 - Centro</p>
+            <p class="unidade-info">(15) 3272-8900 / (15) 3275-1218 / (15) 3272-5115</p>
+            <p class="unidade-info">Das 07h00 às 19h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="ubs">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE BÁSICA DE SAÚDE RIO BRANCO</h3>
+            <p class="unidade-info">Av. Waldomiro de Carvalho, 180 - Vila Rio Branco</p>
+            <p class="unidade-info">(15) 3271-7040 / (15) 3272-7474 </p>
+            <p class="unidade-info">Das 07h00 às 19h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PRONTO ATENDIMENTO RB</h3>
+            <p class="unidade-info">Av. Waldomiro de Carvalho, 180 - Vila Rio Branco</p>
+            <p class="unidade-info">(15) 3271-7040 / (15) 3272-7474</p>
+            <p class="unidade-info">Das 18h00 às 22h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="ubs">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE BÁSICA DE SAÚDE JARDIM MESQUITA</h3>
+            <p class="unidade-info">Rua Esaú Isaac, 350</p>
+            <p class="unidade-info">(15) 3273-4674 / (15) 3373-2637</p>
+            <p class="unidade-info">Das 07h00 às 19h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PRONTO ATENDIMENTO JM</h3>
+            <p class="unidade-info">Rua Esaú Isaac, 350</p>
+            <p class="unidade-info">(15) 3273-4674 / (15) 3373-2637</p>
+            <p class="unidade-info">Das 19h00 às 22h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="ubs">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE BÁSICA DE SAÚDE NOVA ITAPETININGA</h3>
+            <p class="unidade-info">Rua Heitor Calazans Moura, 281</p>
+            <p class="unidade-info">(15) 3273-4675</p>
+            <p class="unidade-info">Das 07h00 às 19h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="ubs">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE BÁSICA DE SAÚDE BELO HORIZONTE</h3>
+            <p class="unidade-info">Rua Gov. Lucas Nogueira Garcês, 301</p>
+            <p class="unidade-info">(15) 3271-9676 / (15) 3271-1547</p>
+            <p class="unidade-info">Das 07h00 às 19h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">POSTO DE ATENDIMENTO À SAÚDE BELA VISTA</h3>
+            <p class="unidade-info">Rua Cleonice Tambelli Fernandes Gonzaga, 70</p>
+            <p class="unidade-info">(15) 3271-2419</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA VILA ARRUDA</h3>
+            <p class="unidade-info">Rua Evilásio Massaine Pires, 357</p>
+            <p class="unidade-info">(15) 3373-4413</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA CHAPADINHA</h3>
+            <p class="unidade-info">Rua Gumercindo Soares Hungria, s/n (Junto ao CAPS II)</p>
+            <p class="unidade-info">(15) 3272-8623</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA TABOÃOZINHO</h3>
+            <p class="unidade-info">Rua José Ferreira Menk, s/n</p>
+            <p class="unidade-info">(15) 3373-2239</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA JARDIM FOGAÇA</h3>
+            <p class="unidade-info">Rua Benedito Bento Mariano, 291</p>
+            <p class="unidade-info">(15) 3373-5383</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA MONTE SANTO</h3>
+            <p class="unidade-info">Rua José Martinho Asem, 300</p>
+            <p class="unidade-info">(15) 3373-7101</p>
+            <p class="unidade-info">Das 07h00 às 16h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA VILA SANTANA</h3>
+            <p class="unidade-info">Rua Urias de Campos, s/n</p>
+            <p class="unidade-info">(15) 3275-1417</p>
+            <p class="unidade-info">Das 07h00 às 16h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA VILA MAZZEI</h3>
+            <p class="unidade-info">Rua Cristovão Colombo, 151</p>
+            <p class="unidade-info">(15) 3272-3700</p>
+            <p class="unidade-info">Das 07h00 às 16h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA RECHÃ</h3>
+            <p class="unidade-info">Rua Pedro Ayres Ventura, 71</p>
+            <p class="unidade-info">(15) 99724-6309</p>
+            <p class="unidade-info">Das 07h00 às 16h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA TUPY</h3>
+            <p class="unidade-info">Rua Salvador de Andrade Canto, s/n</p>
+            <p class="unidade-info">(15) 3372-1001</p>
+            <p class="unidade-info">Das 07h00 às 16h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA GRAMADINHO</h3>
+            <p class="unidade-info">Rua Hermínia de Freitas</p>
+            <p class="unidade-info">(15) 3207-1151</p>
+            <p class="unidade-info">Das 07h00 às 16h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA VARGINHA</h3>
+            <p class="unidade-info">Bairro da Varginha</p>
+            <p class="unidade-info">(15) 3207-7288</p>
+            <p class="unidade-info">Das 07h00 às 15h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA MORRO DO ALTO</h3>
+            <p class="unidade-info">Rua: João Ayres da Rocha, 46 - Distrito Morro do Alto</p>
+            <p class="unidade-info">(15) 99824-9114</p>
+            <p class="unidade-info">Das 07h00 às 15h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE SAÚDE DA FAMÍLIA CAPÃO ALTO</h3>
+            <p class="unidade-info">Rua Bairro Capão Alto, KM 14</p>
+            <p class="unidade-info">(15) 99829-8193</p>
+            <p class="unidade-info">Das 07h00 às 15h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">NASF NÚCLEO APOIO SAÚDE DA FAMÍLIA</h3>
+            <p class="unidade-info">Rua Padre Albuquerque, 395</p>
+            <p class="unidade-info">(15) 3275-2219</p>
+            <p class="unidade-info">Das 07h00 às 15h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">POLICLÍNICA </h3>
+            <p class="unidade-info">Avenida Nisshimbo do Brasil, 848</p>
+            <p class="unidade-info">(15) 3372-1868 / 3272-283</p>
+            <p class="unidade-info">Das 07h00 às 19h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAPI - PROGRAMA DE ATENDIMENTO À PESSOA IDOSA</h3>
+            <p class="unidade-info">Rua Coronel Afonso, 603</p>
+            <p class="unidade-info">(15) 3373-7344</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">EMAD - EQUIPE MULTIDISCIPLINAR DE ATENDIMENTO DOMICILIAR</h3>
+            <p class="unidade-info">Rua Padre Albuquerque, 385 - Centro</p>
+            <p class="unidade-info">(15) 3275-2663</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">AMBULATÓRIO DE FERIDAS</h3>
+            <p class="unidade-info">Rua Padre Albuquerque, 385 - Centro</p>
+            <p class="unidade-info">(15) 3273-4100</p>
+            <p class="unidade-info">Das 08h00 às 18h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">CMR - CENTRO MUNICIPAL DE REABILITAÇÃO</h3>
+            <p class="unidade-info">Rua Antonio Fogaça de Almeida, 387</p>
+            <p class="unidade-info">(15) 3272-2974</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">CEO - CENTRO DE ESPECIALIDADES ODONTOLÓGICAS</h3>
+            <p class="unidade-info">Rua Pedro Cardoso, 115</p>
+            <p class="unidade-info">(15) 3373-3703</p>
+            <p class="unidade-info">Das 07h00 às 18h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">FISIOTERAPIA</h3>
+            <p class="unidade-info">Avenida Nisshimbo do Brasil, 848</p>
+            <p class="unidade-info">(15) 3271-3051</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">LABORATÓRIO MUNICIPAL</h3>
+            <p class="unidade-info">Rua Wenceslau Brás, 280</p>
+            <p class="unidade-info">(15) 3373-2101</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">CAPS AD - CENTRO DE ATENCAO PSICOSSOCIAL ALCOOL E DROGAS</h3>
+            <p class="unidade-info">Rua Dante Orsi, 170 - Vila Rio Branco</p>
+            <p class="unidade-info">(15) 3272-7277</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">CAPS II CHAPADINHA - CENTRO DE ATENCAO PSICOSSOCIAL SAUDE MENTAL</h3>
+            <p class="unidade-info">Rua Gumercindo Soares Hungria, s/n</p>
+            <p class="unidade-info">(15) 3271-7054 / (15) 3271-7789</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">CAPS I - CENTRO DE ATENCAO PSICOSSOCIAL INFANTOJUVENIL</h3>
+            <p class="unidade-info">Rua Esaú Isaac, 123 - Jardim Mesquita</p>
+            <p class="unidade-info">(15) 3273-4227</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">AMBULATÓRIO PET MUNICIPAL</h3>
+            <p class="unidade-info">Av. Prof. Francisco Válio, 925 - Centro</p>
+            <p class="unidade-info">(15) 3373-6043</p>
+            <p class="unidade-info">Das 08h00 às 16h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">CENTRO DE SAÚDE DA MULHER "AMANDA COELHO DA SILVA"</h3>
+            <p class="unidade-info">Av. Prof. Francisco Válio, 752 - Centro</p>
+            <p class="unidade-info">(15) 3531-2080</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">Departamento Regulação Controle e Avaliação - DRCA</h3>
+            <p class="unidade-info">(15) 3376-9632</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">Tecnologia de Informação da Secretaria de Saúde - T.I </h3>
+            <p class="unidade-info">(15) 3376-9627</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">Recursos Humanos da Secretaria de Saúde - RH</h3>
+            <p class="unidade-info">(15) 3376-9622</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">Setor de Convênio / Contratos da Secretaria de Saúde</h3>
+            <p class="unidade-info">(15) 3376-9628</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">Coordenação U.B.S / P.S.F e U.S.F</h3>
+            <p class="unidade-info">(15) 3376-9634</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">Departamento de Apoio Estratégico - DAE </h3>
+            <p class="unidade-info">(15) 3376-9643 / (15) 3376-9648 / (15) 3376-9620</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAS CONCEIÇÃO</h3>
+            <p class="unidade-info">Rua da Caixa Água, 100</p>
+            <p class="unidade-info">(15) 3207-1233</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAS SÃO ROQUE - EDGAR ROLIM</h3>
+            <p class="unidade-info">Bairro do São Roque</p>
+            <p class="unidade-info">(15) 3207-7012</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAS PESCARIA - DR.JOSÉ SILVA DANTAS FILHO</h3>
+            <p class="unidade-info">Bairro da Pescaria</p>
+            <p class="unidade-info">(15) 3207-7338</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAS RETIRO - DR.FLORIANO PEIXOTO VILLAÇA</h3>
+            <p class="unidade-info">04, 40 - Bairro do Retiro</p>
+            <p class="unidade-info">(15) 3207-7344</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAS BAIRRO CLAROS</h3>
+            <p class="unidade-info">Bairro dos Claros</p>
+            <p class="unidade-info">(15) 3207-7291</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAS TURVO DOS RODRIGUES - DR. LEDWAR VIEIRA DE MORAES</h3>
+            <p class="unidade-info">Bairro do Turvo dos Rodrigues</p>
+            <p class="unidade-info">(15) 3207-7294</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAS RIO ACIMA - JOÃO MANOEL VIEIRA</h3>
+            <p class="unidade-info">Bairro do Rio Acima</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="usf">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">USF ASSENTAMENTO CARLOS LAMARCA</h3>
+            <p class="unidade-info">Assentamento Lamarca</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAS FAZENDA DO BANCO</h3>
+            <p class="unidade-info">Bairro do Jurumirim</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAS JURUMIRIM</h3>
+            <p class="unidade-info">Bairro do Jurumirim</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="pas">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">PAS PASSA TRÊS</h3>
+            <p class="unidade-info">Bairro Passa Três</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">VIGILÂNCIA EPIDEMIOLÓGICA MUNICIPAL ( DR.ITAMAR PANCRÁCIO FONTES)</h3>
+            <p class="unidade-info">Rua Plácido Cardoso, 140 - Jardim Mesquita</p>
+            <p class="unidade-info">(15) 3373-5426 / 0800 770 8283</p>
+            <p class="unidade-info">Das 07h00 às 17h00</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">CONTROLE DE VETORES E ZOONOSES</h3>
+            <p class="unidade-info">Av. Prof. Francisco Válio, 925 - Centro</p>
+            <p class="unidade-info">(15) 3373-6043 / 0800 770 8283</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <h3 class="unidade-nome">UNIDADE DISPENSAÇÃO DE MEDICAMENTOS (FARMÁCIA MUNICIPAL)</h3>
+            <p class="unidade-info">Rua Quintino Bocaiuva, 784 - Centro (próximo à Igreja do Rosário)</p>
+            <p class="unidade-info">(15) 3275-2245 / (15) 3272-8632</p>
+        </div>
+
+        <div class="categoriaTransp" data-categoria="outras">
+            <i id="icon_cat" class="fas fa-hospital"></i>
+            <a class="link" href="https://www.itapetininga.sp.gov.br/comissao/comissao/gerencia/6/"><h3 class="unidade-nome">CMSI | Conselho Municipal de Saúde de Itapetininga</a></h3>
+            <p class="unidade-info">Casa dos Conselhos - Rua Cônego Cizenando Cruz Dias, 935 - Fundos - Centro</p>
+            <p class="unidade-info">(15) 3275-1898</p>
+        </div>
+
+    </div>
+ 
+</div>
+
+<script>
+    // Função para filtrar as unidades
+    document.getElementById('Buscapesquisa').addEventListener('input', function() {
+        const searchValue = this.value.toLowerCase(); // Valor da pesquisa
+        const unidades = document.querySelectorAll('.categoriaTransp'); // Todas as categorias
+
+        unidades.forEach(function(unidade) {
+            const nomeUnidade = unidade.querySelector('.unidade-nome').textContent.toLowerCase();
+            
+            // Verifica se o texto da unidade contém o valor digitado na busca
+            if (nomeUnidade.includes(searchValue)) {
+                unidade.style.display = ''; // Mostra a unidade
+            } else {
+                unidade.style.display = 'none'; // Esconde a unidade
+            }
+        });
+    });
+
+    // Filtrando por categoria
+    const botoesCategoria = document.querySelectorAll('.button_cat');
+    botoesCategoria.forEach(function(botao) {
+    botao.addEventListener('click', function() {
+        const categoria = this.getAttribute('data-categoria');
+        const unidades = document.querySelectorAll('.categoriaTransp');
+
+        unidades.forEach(function(unidade) {
+            const unidadeCategoria = unidade.getAttribute('data-categoria');
+
+            if (unidadeCategoria === categoria || categoria === 'todas') {
+                unidade.style.display = '';
+            } else {
+                unidade.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+
+
+   
+   <!-- FOLHA DE ESTILO -->
+   <style>
+
+    #modaltela {
+        display: none;
+        position: fixed;
+        background-color: #000000;
+        margin-top: -60vh;
+        margin-left: -15px;
+        opacity: 0.8;
+        width: 100vh;
+        height: 110vh;
+    }
+
+    .tooltip {
+
+        display: none;
+        color: var(--cor-primaria);
+        max-height: 240px;
+        max-width: 380px;
+        margin-top: -290px;
+        margin-left: -10px;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
+
+    }
+
+    .tooltip:after {
+        /*Triangulo*/
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+        /*Aqui entra a cor da "aba" do balão */
+        border-top: 30px solid #f1f1f1;
+        /*top: -20px;*/
+        /*localização. Experimente alterar para 'bottom'*/
+        bottom: -20px;
+        left: 5%;
+    }
+ 
+    /* Estilo do botão de link */
+    .link1-button {
+        display: block;
+        margin: auto;
+        color: #ffffff;
+        background-color: #308F8F;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        margin-top: 15px;
+        cursor: pointer;
+        /* Adiciona o cursor de mão */
+
+    }
+
+    /* Estilo para telas com largura até 768px */
+    @media (max-width: 768px) {
+        .tooltip {
+            background-color: #F4F5FA;
+            margin-left: -7px;
+            max-height: 320px;
+            max-width: 320px;
+            margin-top: -25vh;
+            color: #1C5454;
+        }
+
+        .tooltip:after {
+            display: none;
+        }
+
+        .tooltip span,
+        .tooltip-content {
+            font-size: 11pt;
+            text-align: justify;
+        }
+
+          /* Estilo do botão de link para telas menores */
+        .link1-button {
+            display: block;
+            margin: auto;
+            color: #ffffff;
+            background-color: #308F8F;
+            border-radius: 20px;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        /* Estilo do card para telas menores */
+        .card {
+            flex: 1 1 45%;
+            max-width: 45%; /* Duas caixas por linha em telas menores */
+        }
+
+        /* Ajuste do container para duas colunas em dispositivos móveis */
+        #containerTransp {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        }
+    }
+    
+ 
+    /* Estilo para títulos com borda azul à esquerda */
+    .linkDiv.titulos {
+        border-left: 6px solid blue;
+    }
+
+    .tooltip-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    /* Estilo para elementos com classe SI e pesquisa */
+    .SI,
+    .pesquisa {
+        border-radius: 20px;
+        background-image: url('https://www.itapetininga.sp.gov.br/admin/js/plugins/ckfinder/core/connector/php/connector.php?command=ImagePreview&lang=pt-br&type=Imagens&currentFolder=%2F&hash=b88d13fa091bf7c0&fileName=banner_SIT.png&size=1824x873&date=20240730104924');
+        text-align: center;
+        padding: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.13);
+    }
+
+    /* Títulos dentro de SI e pesquisa com cor branca */
+    .SI h2,
+    .pesquisa h2 {
+        color: white;
+    }
+
+    /* Estilo para o botão dentro de SI */
+    .button_SI {
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .categoria-botoes {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        position: relative;
+        justify-content: flex-end; /* Alinha os botões à direita */
+        top: 20px; /* Define a distância do topo */
+        right: 0; /* Certifica que os botões estão encostados à direita */
+        width: 100%; /* Garante que o container ocupe toda a largura */
+    }
+
+    .button_cat {
+        color: #ffffff;
+        background-color: #308F8F;
+        border-radius: 20px;
+        width: 150px;
+        height: 50px;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-family: var(--fontTitulo);;
+        font-size: 16px;
+    }
+
+    .button_cat:hover {
+        background-color: #1f7979;
+    }
+
+    /* Margem superior para a pesquisa e centralização de texto */
+    .pesquisa {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    /* Estilo para o campo de pesquisa */
+    #Buscapesquisa {
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.13);
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Estilo para o container principal, utilizando grid para layout */
+    #containerTransp {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Estilo para categorias dentro do container */
+    .categoriaTransp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.13);
+        box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+        height: 250px;
+        justify-content: center;
+    }
+
+
+    /* Estilo para ícones dentro das categorias e itens de categoria */
+    .categoriaTransp i,
+    #icon_item {
+        font-size: 30px;
+        color: #1C5454;
+        background-color: #F4F5FA;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+     /* Animação ao passar o mouse */
+     .categoriaTransp:hover, .item_cat:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Ajuste de Fonte */
+    .categoriaTransp i, .item_cat i {
+        font-size: 24px;
+    }
+
+    .categoriaTransp p, .item_cat p {
+        font-size: 16px;
+    }
+
+    .unidade-nome {
+        font-size: 1.2rem;
+        margin: 0;
+    }   
+
+    .unidade-info {
+        font-size: 0.8rem;
+        margin: 0; /* Remove todas as margens */
+        padding: 0; /* Remove qualquer preenchimento adicional */
+        line-height: 1.2; /* Ajusta a altura da linha para menor espaçamento */
+    }
+
+    .link{
+        text-decoration: none;
+        color: #308F8F;
+    }
+
+    .link:hover{
+        color: #1f7979;
+    }
+
+    
+    /* Estilo específico para ícones dentro de itens de categoria */
+    .item_cat i,
+    #icon_item {
+        font-size: 20px;
+        color: #1C5454;
+        background-color: #F4F5FA;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    /* Estilo para o container de elementos de categoria */
+    #elemento_cat {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-content: start;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    /* Estilo para itens de categoria dentro do grid */
+    .item_cat {
+        display: flex;
+        height: auto;
+        gap: 15px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        padding: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.13);
+        align-items: center;
+    }
+
+    /* Estilo para títulos dentro do grid, ocupando duas colunas */
+    .titulos {
+        grid-column: span 2;
+    }
+
+    /* Estilo para o contêiner de títulos sem bordas e com fundo transparente */
+    .divtitulos {
+        border-radius: 0;
+        border: none;
+        padding: 0px;
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    /* Estilo para o container do título e botão */
+    #titulo-botao {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    /* Estilo para o título dentro do container */
+    #titulo-botao h3 {
+        width: 90%;
+    }
+
+
+    /* Estilos para telas com largura máxima de 900px */
+    @media (max-width: 900px) {
+
+         /* Ajusta o grid do container para ter duas colunas */
+        #containerTransp {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* Ajusta o título para ocupar duas colunas */
+        .titulos {
+            grid-column: span 2;
+        }
+
+         /* Ajusta a largura da caixa de pesquisa */
+        #Buscapesquisa {
+            width: 90%;
+        }
+
+        /* Ajusta o grid dos elementos de categoria para ter duas colunas */
+        #elemento_cat {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* Ajusta os itens de categoria para ter altura e fonte específicas */
+        .item_cat {
+            height: 150px; /* Mantém um tamanho maior para visibilidade */
+            gap: 15px; /* Mantém espaçamento interno */
+            font-size: 18px;
+    }
+    }
+
+    /* Estilos para telas com largura máxima de 600px */
+    @media (max-width: 600px) {
+
+         /* Ajusta o grid do container para ter duas colunas e reduz o espaçamento entre itens */
+        #containerTransp {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+        gap: 15px;
+    }
+
+     /* Ajusta os itens de categoria para uma orientação de coluna e centraliza o texto */
+        .item_cat {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 15px;
+        font-size: 16px;
+    }
+    .UBS .item_cat {
+        flex: none; /* Garante que os itens não se estiquem mais do que o necessário */
+    }
+
+    .item_cat p {
+        font-size: 0.8rem !important; /* Diminui o tamanho da fonte para categorias */
+    }
+
+    .item_cat i {
+        font-size: 15px !important; /* Mantém o ícone menor em dispositivos móveis */
+    }
+
+    .categoria-botoes {
+        display: flex;
+        justify-content: center; /* Centraliza os botões horizontalmente */
+        flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
+        gap: 10px; /* Ajusta o espaçamento entre os botões */
+    }
+
+    .categoria-botoes button {
+        width: 100px; /* Largura ajustada para telas menores */
+        height: 40px; /* Altura ajustada para telas menores */
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    }
+
+    /* Estilos para telas com largura máxima de 480px */
+    @media (max-width: 480px) {
+        .categoria-botoes {
+        justify-content: center; /* Centraliza os botões */
+        gap: 10px;
+        }
+
+        .categoria-botoes button {
+        width: 100%; /* Botões ocupam a largura total no mobile */
+        height: 40px; /* Altura ajustada */
+        font-size: 14px; /* Tamanho da fonte ajustado */
+       }
+
+         /* Ajusta o layout das cartas para ocupar toda a largura disponível */
+        .card {
+            flex: 1 1 100%;
+            max-width: 100%; /* Uma caixa por linha em telas muito pequenas */
+        }
+
+         /* Ajusta o layout dos itens de categoria para orientação vertical e centraliza o texto */
+        .item_cat {
+            flex-direction: column; /* Alinha conteúdo verticalmente */
+            text-align: center; /* Centraliza o texto */
+            font-size: 20px;
+        }
+
+          /* Ajusta o tamanho dos ícones dentro dos itens de categoria */
+        .item_cat i {
+            font-size: 1.2rem !important;
+            padding: 10px; /* Ajusta o padding do ícone */
+        }
+
+         /* Ajusta o tamanho da fonte dos parágrafos dentro dos itens de categoria */
+        .item_cat p {
+            font-size: 0.8rem !important; /* Reduz o tamanho da fonte */
+        }
+
+        /* Ajusta o layout do container para uma única coluna */
+        #containerTransp {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+          /* Ajusta o tamanho da fonte dos parágrafos dentro de .categoriaTransp e .item_cat */
+        .categoriaTransp p, .item_cat p {
+            font-size: 0.8rem;
+        }
+
+           /* Ajusta o tamanho dos ícones dentro de .categoriaTransp e .item_cat */
+        .categoriaTransp i, .item_cat i {
+            font-size: 18px;
+        }
+
+        .categoriaTransp {
+            height: 230px;
+        }
+    }
+
+    
+</style>
